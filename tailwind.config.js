@@ -2,7 +2,15 @@ const colors = require('tailwindcss/colors')
 
 module.exports = {
   mode : ['jit'],
-  purge: ['./**/*.html'],
+  purge: {
+    content : ['./**/*.html'],
+    safelist: [
+      'rotate-45',
+      '-rotate-45',
+      'absolute',
+      'h-56'
+    ]
+  },
   presets: [],
   darkMode: false, // or 'media' or 'class'
   theme: {
@@ -21,6 +29,8 @@ module.exports = {
       white: colors.white,
       gray: colors.coolGray,
       red: colors.red,
+      cyan: colors.cyan,
+      sky: colors.sky,
       yellow: colors.amber,
       green: colors.emerald,
       blue: colors.blue,

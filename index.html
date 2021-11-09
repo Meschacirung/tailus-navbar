@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailus - navbar</title>
+
+    <link rel="stylesheet" href="dist/tailwind.css">
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+</head>
+<body class="min-h-screen bg-gradient-to-b from-cyan-400 to-sky-800">
+    <header class="absolute w-full h-16 bg-white shadow-md transition lg:h-20">
+        <nav class="container m-auto py-3 lg:px-20 lg:py-4">
+            <div class="relative flex flex-wrap items-center justify-between">
+                <div class="relative z-10 w-full px-6 flex items-center justify-between lg:w-auto">
+                    <a href="">
+                        <img src="public/images/logo.svg" class="w-32" alt="tailus logo">
+                    </a>
+
+                    <button id="hamburger" class="relative w-10 h-10 lg:hidden">
+                        <div role="hidden" id="line" class="inset-0 w-6 h-0.5 m-auto rounded-full bg-gray-500 transition duration-300"></div>
+                        <div role="hidden" id="line2" class="inset-0 w-6 h-0.5 mt-1.5 m-auto rounded-full bg-gray-500 transition duration-300"></div>
+                    </button>
+                </div>
+
+                <div id="navlinks" class="hidden w-full px-6 bg-white transition lg:block lg:w-auto lg:px-0 lg:bg-transparent">
+                    <ul class="py-4 text-gray-600 text-lg tracking-wide lg:flex lg:space-x-8 lg:py-0">
+                        <li>
+                            <a href="" class="block w-full py-3 transition hover:text-cyan-600">Portfolio</a>
+                        </li>
+                        <li>
+                            <a href="" class="block w-full py-3 transition hover:text-cyan-600">Services</a>
+                        </li>
+                        <li>
+                            <a href="" class="block w-full py-3 transition hover:text-cyan-600">About</a>
+                        </li>
+                        <li>
+                            <a href="" class="block w-full py-3 transition hover:text-cyan-600">Blog</a>
+                        </li>
+                        <li class="mt-4 lg:mt-0">
+                            <a href="" class="block w-full py-3 px-6 rounded-xl bg-cyan-500 transition hover:bg-cyan-600 focus:bg-cyan-700 active:bg-cyan-800">
+                                <span class="block text-center text-white font-semibold lg:text-base">Contact us</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <script src="dist/app.js"></script>
+</body>
+</html>
